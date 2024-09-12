@@ -1,0 +1,23 @@
+<% include ./partials/header.ejs %>
+
+<div class=" w-full h-screen flex justify-center items-center bg-center bg-cover bg-[url(https://t3.ftcdn.net/jpg/02/41/87/12/360_F_241871231_TqTBaw7cYTixOS8fm4yzFbpUKzuheSoy.jpg)]">
+  <div class="w-96 h-[80vh] bg-white  px-10 py-4 rounded-3xl shadow-lg">
+    <div class="flex justify-center">
+      <img width="80px" src="https://static.vecteezy.com/system/resources/previews/018/930/744/non_2x/pinterest-logo-pinterest-transparent-free-png.png" alt="">
+    </div>
+    <h1 class="text-3xl leading-none capitalize text-center pb-3">create new <span class="text-red-500">A</span>ccount</h1>
+    <form action="/register" method="POST">
+      <input class="block mt-2 w-full px-3 py-2 border-2 rounded-full"  type="text" name="username" placeholder="Enter UserName">
+      <input class="block mt-2 w-full px-3 py-2 border-2 rounded-full"  type="text" name="fullname" placeholder="Enter FullName">
+      <input class="block mt-2 w-full px-3 py-2 border-2 rounded-full"  type="email" name="email" placeholder="Enter Email">
+      <input class="block mt-2 w-full px-3 py-2 border-2 rounded-full" type="password" name="password" placeholder="Enter Password">
+      <button class="block mt-5 w-full px-3 py-2 bg-red-500 text-white rounded-full" type="submit">Sign Up</button>
+      <p class="text-xs font-semibold text-gray-500 pt-2 text-center mb-4">By continuing, you agree to pinterest's Terms of service, Open a new tab and acknowledge that you've read our Privacy Policy Notice at collection.</p>
+    </form>
+    <hr>
+    <a class="inline-block mt-3 text-sm font-semibold text-center w-full" href="/">Have an Account? <span class="text-red-500">LogIn Here</span>.</a>
+  </div>
+</div>
+
+
+<% include ./partials/footer.ejs %>
